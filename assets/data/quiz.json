@@ -13,7 +13,7 @@
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Pas plus de 25,345 kg parce qu'elle a pas envie de foutre l'archouma(la Honte) à NZ",
+            "text": "Pas plus de 25,345 kg parce qu'elle n'a pas envie de foutre l'archouma(la Honte) à NZ",
             "isCorrect": true
           },
           {
@@ -31,12 +31,12 @@
         ]
       },
       {
-        "text": "depuis combien de temps Frabrice BELLOTI Pratiquet-il la Plongée sous Marine ",
+        "text": "Depuis combien de temps Frabrice BELLOTTI Pratiquet-il la Plongée sous Marine ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "il est née avec une bouteille d'oxigène dans le dos",
+            "text": "Il est né avec une bouteille d'oxygène dans le dos",
             "isCorrect": false
           },
           {
@@ -44,22 +44,22 @@
             "isCorrect": false
           },
           {
-            "text": "56 ans, il cartographie le fond marins à ses heures perdues ",
+            "text": "56 ans, il cartographie les fonds marins à ses heures perdues",
             "isCorrect": false
           },
           {
-            "text": "Sa fait fort Longtemps",
+            "text": "ça fait fort Longtemps",
             "isCorrect": true
           }
         ]
       },
       {
-        "text": "Quelle est le sport Préféré d'Oliver PLESSIS ?",
+        "text": "Quel est le sport Préféré d'Oliver PLESSIS ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "le Catch mexiquain, il se deguise en Rey Misterio à la Kermesse de ses enfants",
+            "text": "Le Catch mexicain, il se déguise en Rey Misterio à la Kermesse de ses enfants",
             "isCorrect": false
           },
           {
