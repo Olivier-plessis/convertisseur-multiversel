@@ -2,14 +2,14 @@
   {
     "id": 1,
     "title": "Sport Welsh",
-    "description": "This is a science quiz description. This is multiline text",
+    "description": "C'est une quiz sur la science.",
     "shuffleQuestions": true,
     "imagePath": "",
     "categoryId": 1,
     "questions": [
       {
         "text": "Combien soulève Julie RASSEL au développé couché ?",
-        "duration": 40,
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -31,8 +31,8 @@
         ]
       },
       {
-        "text": "Depuis combien de temps Frabrice BELLOTTI Pratiquet-il la Plongée sous Marine ?",
-        "duration": 40,
+        "text": "Depuis combien de temps Frabrice BELLOTTI pratique t-il la plongée sous-marine ?",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -40,7 +40,7 @@
             "isCorrect": false
           },
           {
-            "text": "2 ans et que les jours de pleine lune en année Bissextile",
+            "text": "2 ans et que les jours de pleine lune en année bissextile",
             "isCorrect": false
           },
           {
@@ -48,14 +48,14 @@
             "isCorrect": false
           },
           {
-            "text": "ça fait fort Longtemps",
+            "text": "ça fait fort fort fort longtemps",
             "isCorrect": true
           }
         ]
       },
       {
         "text": "Quel est le sport Préféré d'Oliver PLESSIS ?",
-        "duration": 40,
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -63,7 +63,7 @@
             "isCorrect": false
           },
           {
-            "text": "le Rugby (c'est pas la bonne Réponse)",
+            "text": "le Rugby (c'est pas la bonne réponse)",
             "isCorrect": true
           },
           {
@@ -77,39 +77,39 @@
         ]
       },
       {
-        "text": "NZ et Champions dans une discipline, Laquelle ?",
-        "duration": 40,
+        "text": "NZ est champion dans une discipline, laquelle ?",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "le développe couche toi",
+            "text": "le développé couche toi",
             "isCorrect": false
           },
           {
-            "text": "la natation Synchronisé",
+            "text": "la natation synchronisée",
             "isCorrect": false
           },
           {
-            "text": "Le Bière pong",
+            "text": "Le bière-pong",
             "isCorrect": false
           },
           {
-            "text": "street fighter, il a remporté le grand tournoi des MobDays",
+            "text": "Street fighter, il a remporté le grand tournoi des MobDays",
             "isCorrect": true
           }
         ]
       },
       {
-        "text": "Quelle sport Sidiki as-t-il pratiqué à haut niveau",
-        "duration": 40,
+        "text": "Quel sport Sidiki a-t-il pratiqué à haut niveau",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "le judo, il se Fait appelé Teddy RINER de le milieu ",
+            "text": "le judo, il se fait appeler Teddy RINER de le milieu",
             "isCorrect": true
           },
           {
-            "text": "Le Lancé de hache #RagnarLodbrock",
+            "text": "Le lancer de hâche #RagnarLodbrock",
             "isCorrect": false
           },
           {
@@ -117,7 +117,7 @@
             "isCorrect": false
           },
           {
-            "text": "l'escrime (c'est clairement la bonne Réponse)",
+            "text": "L'escrime (c'est clairement la bonne réponse)",
             "isCorrect": false
           }
         ]
@@ -127,37 +127,37 @@
   {
     "id": 2,
     "title": "APEROOOOO !!",
-    "description": "This is a science quiz 2 description. This is multiline text",
+    "description": "Quiz sur l'apéro time.",
     "shuffleQuestions": true,
     "imagePath": "",
     "categoryId": 1,
     "questions": [
       {
-        "text": "Combien peut-on mettre de pinte de bière dans un Jean-michel KREMER en une Soirée ",
-        "duration": 40,
+        "text": "Combien peut-on mettre de pintes de bière dans un Jean-michel KREMER en une Soirée ?",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Aucune, il a pas le droit c'est comme Obélix, il est Tomber dedans quand il était petit",
+            "text": "Aucune, il n'a pas le droit c'est comme Obélix, il est tombé dedans quand il était petit",
             "isCorrect": false
           },
           {
-            "text": "130 , il a une Sacrée déscente qu'on n'Aimerait pas remonter à vélo",
+            "text": "130 , il a une sacrée descente qu'on n'aimerait pas remonter à vélo",
             "isCorrect": false
           },
           {
-            "text": "10 et plus si Affinités",
+            "text": "10 et plus si affinités",
             "isCorrect": true
           },
           {
-            "text": "2 car il ne tien pas l'alcool ",
+            "text": "2 car il ne tient pas l'alcool",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Qu'elle-est la Boisson Préféré Céline PREZIOSI",
-        "duration": 40,
+        "text": "Quelle est la boisson préférée de Céline PREZIOSI",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -165,22 +165,22 @@
             "isCorrect": false
           },
           {
-            "text": "Le Coca ZERO, faut quand même faire Attention à ça ligne",
+            "text": "Le Coca ZERO, faut quand même faire attention à sa ligne",
             "isCorrect": false
           },
           {
-            "text": "Le lait fraise car elle a du mal a ce Détacher de son âme d'enfant",
+            "text": "Le lait fraise car elle a du mal a se détacher de son âme d'enfant",
             "isCorrect": false
           },
           {
-            "text": "Le jus de tomate, qui est une boisson fortement Dangereuses pour le commun des Mortelles",
+            "text": "Le jus de tomate, qui est une boisson fortement dangereuses pour le commun des mortels",
             "isCorrect": true
           }
         ]
       },
       {
-        "text": "Un jour David MOREAU a gouté à la meilleur bière Lilloise, comment s'appelle-t-elle ?",
-        "duration": 40,
+        "text": "Un jour David MOREAU a goûté à la meilleure bière Lilloise, comment s'appelle-t-elle ?",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -188,7 +188,7 @@
             "isCorrect": true
           },
           {
-            "text": "La GINNESS",
+            "text": "La GUINNESS",
             "isCorrect": false
           },
           {
@@ -203,7 +203,7 @@
       },
       {
         "text": "la devise de BOBY",
-        "duration": 40,
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
@@ -219,7 +219,7 @@
             "isCorrect": true
           },
           {
-            "text": "Les trois dans la même Journée",
+            "text": "Les trois dans la même journée",
             "isCorrect": false
           }
         ]
@@ -229,19 +229,19 @@
   {
     "id": 3,
     "title": "Les MobDays, c'est bien",
-    "description": "This is a science quiz 2 description. This is multiline text",
+    "description": "Quiz sur les mobdays.",
     "shuffleQuestions": true,
     "imagePath": "",
     "categoryId": 1,
     "questions": [
       {
         "text": "Combien de mobdays pour refaire le mur de capsules de la villa ?",
-        "duration": 40,
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
             "text": "Autant que de jours dans une semaine",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
             "text": "Un mobdays suffit car on est des gros soiffards",
@@ -249,7 +249,7 @@
           },
           {
             "text": "On n'y arrivera jamais malgré nos efforts",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "text": "La réponse D",
@@ -259,30 +259,30 @@
       },
       {
         "text": "Les mobdays, combien de kilocalories en bouffe ?",
-        "duration": 40,
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
             "text": "Autant que la distance terre lune en kilometres",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
-            "text": "6 mois d'une alimentation correcte pour un habitent du tier Monde",
-            "isCorrect": false
+            "text": "6 mois d'une alimentation correcte pour un habitant du tiers Monde",
+            "isCorrect": true
           },
           {
             "text": "L'équivalent du nombre de cheveux de 3 mobilous",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
             "text": "Ce que peut manger Zouhir en une Journée ",
-            "isCorrect": true
+            "isCorrect": false
           }
         ]
       },
       {
-        "text": "Durant les mobdays, qu'est ce qui a été le plus marquant ?",
-        "duration": 40,
+        "text": "Durant les mobdays, qu'est-ce qui a été le plus marquant ?",
+        "duration": 50,
         "shuffleOptions": true,
         "options": [
           {
