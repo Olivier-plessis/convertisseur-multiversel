@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 
+import 'package:flutter/material.dart';
 import 'package:itiwittiwtt_quiz_app/common/json_util.dart';
 import 'package:itiwittiwtt_quiz_app/models/category.dart';
 import 'package:itiwittiwtt_quiz_app/models/question.dart';
@@ -11,8 +12,21 @@ import 'package:shared_preferences/shared_preferences.dart';
 class QuizStore {
   static SharedPreferences? prefs;
   static const String quizHistoryListKey = "QuizHistoryListKey";
+  static var cheat = true;
   final String categoryJsonFileName = "assets/data/category.json";
   final String quizJsonFileName = "assets/data/quiz.json";
+
+  Future<bool> getCheat() async {
+    return cheat;
+  }
+
+  static Color getColor(bool isCorrect) {
+    return cheat ? isCorrect ? Color(0xfff28d09) : Colors.deepPurple : Colors.deepPurple;
+  }
+
+  Future<void> toggleCheat() async {
+     cheat = !cheat;
+  }
 
   static Future<void> initPrefs() async {
     prefs = await SharedPreferences.getInstance();

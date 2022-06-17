@@ -118,6 +118,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
       child: Column(
         children: List<Option>.from(question?.options ?? []).map((e) {
           int optionIndex = question!.options.indexOf(e);
+          bool isCorrect = question!.options[optionIndex].isCorrect;
           var optWidget = GestureDetector(
             onTap: () {
               setState(() {
@@ -137,6 +138,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
               _optionSerial[optionIndex]!.optionText,
               e.text,
               isSelected: _optionSerial[optionIndex]!.isSelected,
+              isCorrect,
             ),
           );
           return optWidget;
