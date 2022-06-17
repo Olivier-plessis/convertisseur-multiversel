@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         child: Text(
           "Quiz Category",
-          style: TextStyle(fontSize: 30, color: ThemeHelper.primaryColor),
+          style: TextStyle(fontSize: 30, color: ThemeHelper.accentColor),
         ),
       ),
       DiscoButton(
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         child: Text(
           "Quiz History",
-          style: TextStyle(fontSize: 30, color: ThemeHelper.primaryColor),
+          style: TextStyle(fontSize: 30, color: ThemeHelper.accentColor),
         ),
       ),
     ];
