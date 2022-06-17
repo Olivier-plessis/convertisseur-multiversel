@@ -16,7 +16,7 @@ class QuizStore {
   final String categoryJsonFileName = "assets/data/category.json";
   final String quizJsonFileName = "assets/data/quiz.json";
 
-  Future<bool> getCheat() async {
+  static bool getCheat() {
     return cheat;
   }
 
@@ -24,7 +24,7 @@ class QuizStore {
     return cheat ? isCorrect ? Color(0xfff28d09) : Colors.deepPurple : Colors.deepPurple;
   }
 
-  Future<void> toggleCheat() async {
+  static Future<void> toggleCheat() async {
      cheat = !cheat;
   }
 

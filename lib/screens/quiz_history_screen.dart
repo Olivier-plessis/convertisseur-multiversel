@@ -37,7 +37,13 @@ class _QuizHistoryScreenState extends State<QuizHistoryScreen> {
           decoration: ThemeHelper.fullScreenBgBoxDecoration(),
           child: Column(
             children: [
-              ScreenHeader("Quiz History"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                ScreenHeader("Quiz History"),
+                  ToggleButtons(children: [Icon(Icons.cake)], isSelected: [QuizStore.getCheat()], onPressed: (int index) => QuizStore.toggleCheat(),)
+                ],
+              ),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
