@@ -45,7 +45,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void initState() {
     engine.start();
     super.initState();
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
@@ -60,7 +60,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
       progressTimer!.cancel();
     }
     engine.stop();
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
@@ -121,7 +121,8 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
           var optWidget = GestureDetector(
             onTap: () {
               setState(() {
-                engine.updateAnswer(quiz.questions.indexOf(question!), optionIndex);
+                engine.updateAnswer(
+                    quiz.questions.indexOf(question!), optionIndex);
                 for (int i = 0; i < _optionSerial.length; i++) {
                   _optionSerial[i]!.isSelected = false;
                 }
@@ -244,8 +245,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     progressTimer!.cancel();
     store.getCategoryAsync(quiz.categoryId).then((category) {
       store
-          .saveQuizHistory(QuizHistory(quiz.id, quiz.title, category.id,
-              "$total/${quiz.questions.length}", takenTime.format(), DateTime.now(), "Complete"))
+          .saveQuizHistory(QuizHistory(
+              quiz.id,
+              quiz.title,
+              category.id,
+              "$total/${quiz.questions.length}",
+              takenTime.format(),
+              DateTime.now(),
+              "Complete"))
           .then((value) {
         Navigator.pushReplacementNamed(context, QuizResultScreen.routeName,
             arguments: QuizResult(quiz, total));

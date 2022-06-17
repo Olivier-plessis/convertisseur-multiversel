@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:itiwittiwtt_quiz_app/common/theme_helper.dart';
 import 'package:itiwittiwtt_quiz_app/models/quiz_history.dart';
-import 'package:itiwittiwtt_quiz_app/screens/quiz_screen.dart';
 import 'package:itiwittiwtt_quiz_app/stores/quiz_store.dart';
-import 'package:itiwittiwtt_quiz_app/widgets/disco_button.dart';
 import 'package:itiwittiwtt_quiz_app/widgets/screen_header.dart';
 
 class QuizHistoryScreen extends StatefulWidget {
@@ -94,28 +92,6 @@ class _QuizHistoryScreenState extends State<QuizHistoryScreen> {
                         "Date: ${quiz.quizDate.day}-${quiz.quizDate.month}-${quiz.quizDate.year} ${quiz.quizDate.hour}:${quiz.quizDate.minute}"),
                   ]),
             ),
-            Column(
-              children: [
-                SizedBox(
-                  height: 50,
-                ),
-                DiscoButton(
-                    width: 100,
-                    height: 50,
-                    onPressed: () {
-                      store
-                          .getQuizByIdAsync(quiz.quizId, quiz.categoryId)
-                          .then((value) {
-                        if (value != null) {
-                          Navigator.pushReplacementNamed(
-                              context, QuizScreen.routeName,
-                              arguments: value);
-                        } else {}
-                      });
-                    },
-                    child: Text("Start Again")),
-              ],
-            )
           ],
         ));
   }

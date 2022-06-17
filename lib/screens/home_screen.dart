@@ -1,7 +1,4 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:itiwittiwtt_quiz_app/common/theme_helper.dart';
 import 'package:itiwittiwtt_quiz_app/stores/quiz_store.dart';
 import 'package:itiwittiwtt_quiz_app/widgets/disco_button.dart';
@@ -26,105 +23,24 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
         key: _key,
-        drawer: navigationDrawer(),
         body: Container(
           alignment: Alignment.center,
-          decoration: ThemeHelper.fullScreenBgBoxDecoration(),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              drawerToggleButton(),
+              Image(
+                image: AssetImage("assets/images/welsh_small.png"),
+                width: 225,
+              ),
               Column(
                 children: [
-                  headerText("ITIWITTIWTT "),
                   SizedBox(height: 30),
                   ...homeScreenButtons(context),
                 ],
-              ),
+              )
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Drawer navigationDrawer() {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: const BoxDecoration(
-              color: Colors.deepPurple,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Text(
-                  "itiwittiwtt App",
-                  style: TextStyle(color: Colors.white, fontSize: 32),
-                ),
-                Text(
-                  "Version: 1.00",
-                  style: TextStyle(color: Colors.white, fontSize: 16),
-                ),
-              ],
-            ),
-          ),
-          ListTile(
-            title: const Text('Home'),
-            onTap: () {
-              Navigator.pushReplacementNamed(context, HomeScreen.routeName);
-            },
-          ),
-          ListTile(
-            title: const Text('Start Quiz'),
-            onTap: () async {
-              var quiz = await _quizStore.getRandomQuizAsync();
-              Navigator.pushNamed(context, "/quiz", arguments: quiz);
-            },
-          ),
-          ListTile(
-            title: const Text('Quiz Category'),
-            onTap: () {
-              Navigator.pushNamed(context, QuizCategoryScreen.routeName);
-            },
-          ),
-          ListTile(
-            title: const Text('Quiz History'),
-            onTap: () {
-              Navigator.pushNamed(context, QuizHistoryScreen.routeName);
-            },
-          ),
-          Divider(
-            thickness: 2,
-          ),
-          ListTile(
-            title: const Text('Exit'),
-            onTap: () {
-              if (Platform.isAndroid) {
-                SystemNavigator.pop();
-              } else if (Platform.isIOS) {
-                exit(0);
-              }
-            },
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget drawerToggleButton() {
-    return Container(
-      padding: EdgeInsets.only(top: 20, left: 20),
-      alignment: Alignment.topLeft,
-      child: GestureDetector(
-        child: Image(
-          image: AssetImage("assets/icons/menu.png"),
-          width: 36,
-        ),
-        onTap: () {
-          _key.currentState!.openDrawer();
-        },
       ),
     );
   }

@@ -24,15 +24,11 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/SplashScreen.bg.png"),
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: BoxDecoration(color: Colors.white),
         child: Container(
           child: Image(
-            image: AssetImage("assets/images/SplashScreen.shape.png"),
+            image: AssetImage("assets/images/welsh_logo.png"),
+            width: 300,
           ),
         ),
       ),

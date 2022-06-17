@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:itiwittiwtt_quiz_app/common/json_util.dart';
 import 'package:itiwittiwtt_quiz_app/models/category.dart';
+import 'package:itiwittiwtt_quiz_app/models/question.dart';
 import 'package:itiwittiwtt_quiz_app/models/quiz.dart';
 import 'package:itiwittiwtt_quiz_app/models/quiz_history.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -56,12 +57,19 @@ class QuizStore {
 
   Future<Quiz> getRandomQuizAsync() async {
     List<Quiz> quizList = [];
+    List<Question> questionsList = [];
     quizList = await JsonUtil.loadFromJsonAsync<Quiz>(
         quizJsonFileName, Quiz.jsonToObject);
-    var max = quizList.length;
-    var index = Random().nextInt(max);
-    var quiz = quizList[index];
-    return quiz;
+    for (var i = 0; i < 10; i++) {
+      var index = Random().nextInt(quizList.length);
+      var quizItem = quizList[index];
+      var questions = quizItem.questions;
+      var indexQ = Random().nextInt(questions.length);
+      var q = questions[indexQ];
+      questionsList = [...questionsList, q];
+    }
+    return Quiz(10, "All category Quiz", "All category Quiz", true, "", 10,
+        questionsList);
   }
 
   Future<void> saveQuizHistory(QuizHistory history) async {
