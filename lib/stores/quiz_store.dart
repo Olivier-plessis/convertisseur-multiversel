@@ -68,7 +68,7 @@ class QuizStore {
       var q = questions[indexQ];
       questionsList = [...questionsList, q];
     }
-    return Quiz(10, "All category Quiz", "All category Quiz", true, "", 10,
+    return Quiz(1, "Toutes categories", "Toutes categories", true, "", 1,
         questionsList);
   }
 
